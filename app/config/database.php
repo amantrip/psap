@@ -54,10 +54,10 @@ return array(
 
         'mysql' => array(
             'driver'    => 'mysql',
-            'host'      => 'localhost',
+            'host'      => getenv('DB_HOST'),#'localhost',
             'database'  => 'psap',
-            'username'  =>  'homestead',
-            'password'  =>  'secret',
+            'username'  =>  getenv('DB_USERNAME'), #'homestead',
+            'password'  =>  getenv('DB_PASSWORD'),#,'secret',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',

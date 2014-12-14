@@ -28,6 +28,7 @@ class AdminController extends \BaseController {
         }
 
         $entries = Registry::all();#->take(100);
+        #return $entries[0]->created_at;
         return View::make('admin.index', ['entries' => $entries, 'colors' => static::$COLORS]);
 	}
 

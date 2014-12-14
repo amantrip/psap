@@ -255,7 +255,11 @@
                                     <td class="">{{ $entry->text_911 }}</td>
                                     <td class="center">{{ $entry->typechange }}</td>
                                     <td>{{ $entry->comments }}</td>
-                                    <td>{{ $entry->updated_at }}</td>
+                                    @if($entry->updated_at == "-0001-11-30 00:00:00")
+                                        <td></td>
+                                    @else
+                                        <td>{{ $entry->updated_at }}</td>
+                                    @endif
                                     <td class="center">{{ link_to("/registry/edit/{$entry->id}", "Edit") }}</td>
                                     <td class="center">{{ link_to("/registry/delete/{$entry->psapid}", "Delete") }}</td>
                                 </tr>

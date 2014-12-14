@@ -22,10 +22,10 @@ return array(
 
         'mysql' => array(
             'driver'    => 'mysql',
-            'host'      => getenv('DB_HOST'),#'localhost',
+            'host'      =>  getenv('DB_HOST'),# 'localhost',
             'database'  => 'psap',
-            'username'  =>  getenv('DB_USERNAME'), #'homestead',
-            'password'  =>  getenv('DB_PASSWORD'),#,'secret',
+            'username'  =>  getenv('DB_USERNAME'),# 'homestead',
+            'password'  =>  getenv('DB_PASSWORD'), #'secret',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
